@@ -1,146 +1,87 @@
+
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio Técnico de Electrónica y Electrodomésticos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #007BFF;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: #007BFF;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .service {
-            background: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .service img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .form-container {
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-        }
-        .form-container label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        .form-container input, 
-        .form-container textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-container button {
-            background: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .form-container button:hover {
-            background: #0056b3;
-        }
-    </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Servicio Técnico de Electrónica (Freddy)</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Servicio Técnico de Electrónica y Electrodomésticos</h1>
-    </header>
-    <nav>
-        <div class="container">
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#sobre-nosotros">Sobre Nosotros</a>
-            <a href="#consulta">Consulta</a>
-        </div>
-    </nav>
-    <div class="container">
-        <section id="servicios">
-            <h2>Servicios Ofrecidos</h2>
-            <div class="service">
-                <h3>Reparación de Electrónica</h3>
-                <img src="images/tarjeta2.jpg" alt="Reparación de Televisor">
-                <p>Ofrecemos servicios de reparación para una amplia gama de dispositivos electrónicos.</p>
-            </div>
-            <div class="service">
-                <h3>Reparación de Electrodomésticos</h3>
-                <img src="ruta/a/imagen_equipos_sonido.jpg" alt="Reparación de Equipos de Sonido">
-                <p>Reparamos electrodomésticos como neveras, lavadoras y microondas.</p>
-            </div>
-            <div class="service">
-                <h3>Mantenimiento Preventivo</h3>
-                <p>Realizamos mantenimiento preventivo para asegurar el correcto funcionamiento de sus equipos.</p>
-            </div>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Para más información, llámanos al <strong>(123) 456-7890</strong> o envíanos un correo a <strong>info@serviciotecnico.com</strong>.</p>
-        </section>
-        <section id="sobre-nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos un equipo de profesionales con años de experiencia en el servicio técnico de electrónica y electrodomésticos.</p>
-        </section>
-        <section id="consulta">
-            <h2>Formulario de Consulta</h2>
-            <div class="form-container">
-                <form action="enviar.php" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="consulta">Consulta:</label>
-                    <textarea id="consulta" name="consulta" rows="4" required></textarea>
-                    
-                    <button type="submit">Enviar Consulta</button>
-                </form>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 Servicio Técnico de Electrónica y Electrodomésticos. Todos los derechos reservados.</p>
-    </footer>
-</body>
+<body class="bg-gray-100 text-gray-800">
+<header class="bg-blue-700 text-white p-4">
+<div class="container mx-auto flex justify-between items-center">
+
+<div class="flex items-center space-x-2">
+  <img src="imagen tv re.png" alt="Icono" class="w-10 h-auto">
+  <h1 class="text-xl font-bold">Servicio Técnico de Electrónica (Freddy)</h1>
+</div>
+
+<nav class="space-x-4">
+<a class="hover:underline" href="#inicio">Inicio</a>
+<a class="hover:underline" href="#servicios">Servicios</a>
+<a class="hover:underline" href="#galeria">Galería</a>
+<a class="hover:underline" href="#contacto">Contacto</a>
+</nav>
+</div>
+</header>
+<section class="py-10 text-center bg-white" id="inicio">
+<h2 class="text-3xl font-bold mb-4">¡Reparamos tus dispositivos electrónicos!</h2>
+<p class="text-lg">Atención rápida, confiable y garantizada. A domicilio o en taller.</p>
+</section>
+<section class="py-10 bg-gray-200" id="servicios">
+<div class="container mx-auto text-center">
+<h2 class="text-2xl font-bold mb-6">Nuestros Servicios</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white p-4 rounded shadow">
+<h3 class="text-xl font-bold">Reparación de TVs</h3>
+<p>LED, LCD, Smart TVs – todas las marcas.</p>
+</div>
+<div class="bg-white p-4 rounded shadow">
+<h3 class="text-xl font-bold">Audio y Parlantes</h3>
+<p>Equipos de sonido, home theaters, bocinas Bluetooth.</p>
+</div>
+<div class="bg-white p-4 rounded shadow">
+<h3 class="text-xl font-bold">Otros Dispositivos</h3>
+<p>Microondas, protectores, decodificadores, tarjeta de nevera, balanzas, secadores, cornetas y más.</p>
+</div>
+<div class="bg-white p-4 rounded shadow"><h3 class="text-xl font-bold">Computadoras y Laptops</h3><p>Software, instalación de sistemas operativos y mantenimiento.</p></div></div>
+</div>
+</section>
+<section class="py-10 bg-white" id="galeria">
+<div class="container mx-auto text-center">
+<h2 class="text-2xl font-bold mb-6">Ejemplos de nuestros trabajos</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"><div><img alt="Laptop de diagnóstico en taller" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/laptop Acer.jpg"/><p class="mt-2 text-gray-600 text-sm">Laptop de diagnóstico en taller</p></div><div><img alt="Freidora de aire KUCHE en reparación" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Airfryer chinos.jpg"/><p class="mt-2 text-gray-600 text-sm">Freidora de aire KUCHE en reparación</p></div><div><img alt="Freidora Silver Crest lista para entrega" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Airfryer Silver.jpg"/><p class="mt-2 text-gray-600 text-sm">Freidora Silver Crest lista para entrega</p></div><div><img alt="Freidora Frigilux restaurada" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Airfryer.jpg"/><p class="mt-2 text-gray-600 text-sm">Freidora Frigilux restaurada</p></div><div><img alt="Balanza digital funcionando correctamente" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Balanza.jpg"/><p class="mt-2 text-gray-600 text-sm">Balanza digital funcionando correctamente</p></div><div><img alt="Control remoto de aire acondicionado Samsung" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Control remoto de Aire.jpg"/><p class="mt-2 text-gray-600 text-sm">Control remoto de aire acondicionado Samsung</p></div><div><img alt="Corneta Sankey reparada" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Corneta Bluetooth.jpg"/><p class="mt-2 text-gray-600 text-sm">Corneta Sankey reparada</p></div><div><img alt="Equipo Panasonic funcionando" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Equipo de Sonido Panasonic.jpg"/><p class="mt-2 text-gray-600 text-sm">Equipo Panasonic funcionando</p></div><div><img alt="TV con barra LED reparada" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/equipo reparado barra led.jpg"/><p class="mt-2 text-gray-600 text-sm">TV con barra LED reparada</p></div><div><img alt="Equipo Samsung restaurado" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Equipo sonido samsung.jpg"/><p class="mt-2 text-gray-600 text-sm">Equipo Samsung restaurado</p></div><div><img alt="Sistema de retroiluminación LED reparado" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Led Reparado.jpg"/><p class="mt-2 text-gray-600 text-sm">Sistema de retroiluminación LED reparado</p></div><div><img alt="Microondas Panasonic reparado" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Microondas.jpg"/><p class="mt-2 text-gray-600 text-sm">Microondas Panasonic reparado</p></div><div><img alt="Fuente de alimentación revisada" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Placa Fuentes.jpg"/><p class="mt-2 text-gray-600 text-sm">Fuente de alimentación revisada</p></div><div><img alt="Planta de Sonido revisada" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/PLanta.jpg"/><p class="mt-2 text-gray-600 text-sm">Planta de Sonido revisada</p></div><div><img alt="Reparación de protector Proctor" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Proctor 110 voltio.jpg"/><p class="mt-2 text-gray-600 text-sm">Reparación de protector Proctor</p></div><div><img alt="Protector triple listo para entrega" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Protector triple.jpg"/><p class="mt-2 text-gray-600 text-sm">Protector triple listo para entrega</p></div><div><img alt="TV reparado con sintonización perfecta" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Repacion de Tv.jpg"/><p class="mt-2 text-gray-600 text-sm">TV reparado con sintonización perfecta</p></div><div><img alt="Barra LED en proceso de reparación" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Reparacion Barra Led Tv.jpg"/><p class="mt-2 text-gray-600 text-sm">Barra LED en proceso de reparación</p></div><div><img alt='Reparación de tiras LED en TV de 32"' class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Reparando Barra led tv 32.jpg"/><p class="mt-2 text-gray-600 text-sm">Reparación de tiras LED en TV de 32"</p></div><div><img alt="Secadores restaurados y probados" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Secadores de Pelo.jpg"/><p class="mt-2 text-gray-600 text-sm">Secadores restaurados y probados</p></div><div><img alt="Microondas listo para entrega" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/small_1008.jpg"/><p class="mt-2 text-gray-600 text-sm">Microondas listo para entrega</p></div><div><img alt="Tarjeta electrónica de nevera en mantenimiento" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Tarjeta de Nevera.jpg"/><p class="mt-2 text-gray-600 text-sm">Tarjeta electrónica de nevera en mantenimiento</p></div><div><img alt="TV de 55 pulgadas restaurado" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Televisor 55 Reparado.jpg"/><p class="mt-2 text-gray-600 text-sm">TV de 55 pulgadas restaurado</p></div><div><img alt="Televisor Lux reparado" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Televisor Lux Reparado.jpg"/><p class="mt-2 text-gray-600 text-sm">Televisor Lux reparado</p></div><div><img alt="TV LuxBeam reparado con éxito" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Televisor Reparado LUxBeam.jpg"/><p class="mt-2 text-gray-600 text-sm">TV LuxBeam reparado con éxito</p></div><div><img alt="TV reparado y probado" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Televisor Reparado.jpg"/><p class="mt-2 text-gray-600 text-sm">TV reparado y probado</p></div><div><img alt="Televisor convencional funcionando" class="rounded shadow-lg w-full h-auto max-h-60 object-contain" src="galeria/Televisores Convencionales.jpg"/><p class="mt-2 text-gray-600 text-sm">Televisor convencional funcionando</p></div></div>
+</div>
+</section>
+<section class="py-10 bg-white" id="contacto">
+<div class="container mx-auto text-center">
+<h2 class="text-2xl font-bold mb-4">Contáctanos</h2>
+<div class="flex flex-col md:flex-row justify-center gap-8 items-start mt-10"><div class="w-full md:w-1/3">
+<p>📱 Escríbenos por WhatsApp o utiliza este formulario de contacto:</p><form class="space-y-4" id="formulario" onsubmit="enviarWhatsApp(event)">
+<input class="w-full p-2 border rounded" id="nombre" placeholder="Tu nombre" required="" type="text"/>
+<input class="w-full p-2 border rounded" id="servicio" placeholder="Qué necesitas reparar" required="" type="text"/>
+<textarea class="w-full p-2 border rounded" id="mensaje" placeholder="Detalles del problema" required="" rows="4"></textarea>
+<button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700" type="submit">Enviar por WhatsApp</button>
+</form>
+</div><div class="w-full md:w-1/3 text-center"><iframe allowfullscreen="" class="rounded shadow" height="180" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=10.693683,-71.679900&amp;z=16&amp;output=embed" style="border:0;" width="100%"></iframe><p class="mt-2 text-gray-600 text-sm">Br. Raul Leoni Calle 74 #96-20, Maracaibo</p></div><div class="w-full md:w-1/3 text-left text-sm space-y-2"><p>📱 WhatsApp: +58 414 6184948</p><p>✉️ Correo: freddypino@hotmail.com</p><p class="text-gray-600">📍 Br. Raul Leoni Calle 74 #96-20</p><p>🕐 Horario: Lunes a Viernes, 9:00 AM - 5:00 PM</p></div></div>
+</div>
+</section>
+<a class="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 hover:bg-green-600 z-50" href="https://wa.me/584146184948?text=Hola%20quiero%20información%20sobre%20una%20reparación" target="_blank">
+<span>💬 WhatsApp</span>
+</a>
+<footer class="bg-blue-700 text-white text-center p-4 mt-10">
+<p>© 2025 Servicio Técnico de Electrónica. Todos los derechos reservados.</p>
+</footer>
+<script>
+        function enviarWhatsApp(e) {
+          e.preventDefault();
+          const nombre = document.getElementById("nombre").value;
+          const servicio = document.getElementById("servicio").value;
+          const mensaje = document.getElementById("mensaje").value;
+          const texto = `Hola, soy ${nombre}. Necesito reparar: ${servicio}. Detalles: ${mensaje}`;
+          const url = `https://wa.me/584146184948?text=${encodeURIComponent(texto)}`;
+          window.open(url, "_blank");
+        }
+        </script></body>
 </html>
